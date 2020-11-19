@@ -30,3 +30,37 @@
 
   /*Size*/
 }
+/*Universal tag*/
+* {
+  box-sizing: border-box;
+}
+
+/*Typography*/
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 1rem 0;
+}
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 0.5rem 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular-bold);
+  margin: 0.5rem 0;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular-bold);
+  color: var(--color-black);
+  margin: 0.25rem 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
