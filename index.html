@@ -22,7 +22,7 @@
             <img class="icon" src="img/favicon.png" alt="brand icon">
             <a href="#">ddingwoo</a>
         </div>
-            <ul class="navbar__mneu">
+            <ul class="navbar__menu">
                 <li class="navbar__menu__item activity">Home</li>
                 <li class="navbar__menu__item">About</li>   
                 <li class="navbar__menu__item">Skill</li>
@@ -30,6 +30,11 @@
                 <li class="navbar__menu__item">Testimonials</li>
                 <li class="navbar__menu__item">Contact</li>
             </ul>   
+
+            <!--toogle button-->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i> 
+      </button>
     </nav>
 
     <!-- Home -->
@@ -50,9 +55,9 @@
         </button>
     </section>
     <!-- about -->  
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
             <h1 class="about__title">About me</h1>
-            <p class="about__desc">나의 대한 소개 글~</p>
+            <p class="about__desc">about me</p>
             <div class="about__majors">
                 <div class="major">
                     <ul>
@@ -97,85 +102,89 @@
             <div class="about__academic">
                 <div class="academic">
                     <img src="img/projects/jobs/academic-logo.png" alt="academic-logo">
-                    <p class="academic__name">동서울전문대학교 <span class="academic--fonteffect">Dong Seoul College</span></p>
+                    <p class="academic__name">동서울전문대학교 Dong Seoul College</p>
                     <p class="academic__period">컴퓨터정보과(스마트정보):  2017년도입학 2021년도 졸업</p>
                 </div>
             </div>
     </section>
   <!-- skill -->
     <section  section id="skill"class="section">
-        <div class=skills>
-            <h1>skills</h1>
-            <h2 class="description">skills&Attributes</h2>
-            <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Caable of <br>
-                working width a team environment and independenty. Ability to plan and time shedule, work under <br>
-                strict time pressure and adapt quickly when needed.
-            </p>
-        </div>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                <div class="skill__description">
-                    <span>HTML</span>
-                    <span>25%</span>
-                 </div>
-                 <div class="skill__bar">
-                    <div class="skll__value" style="width: 25;"></div>
-                </div>
-                </div>  
-                <div class="skill">
+        <div class="section__container">
+            <div class=skills>
+                <h1>skills</h1>
+                <h2 class="description">skills&Attributes</h2>
+                <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Caable of <br>
+                    working width a team environment and independenty. Ability to plan and time shedule, work under <br>
+                    strict time pressure and adapt quickly when needed.
+                </p>
+            </div>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
                     <div class="skill__description">
-                        <span>CSS3</span>
+                        <span>HTML</span>
                         <span>25%</span>
-                </div>
-                    <div class="skill__bar">
-                    <div class="skll__value" style="width: 25;"></div>
-                </div>
-                </div>  
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>5%</span>
                      </div>
                      <div class="skill__bar">
-                        <div class="skll__value"style="width: 5;"></div>
+                        <div class="skill__value" style="width:25%;"></div>
                     </div>
                     </div>  
-                <div class="skill">
-                <div class="skill__description">
-                    <span>React</span>
-                    <span>0%</span>
-                </div>
-                    <div class="skill__bar">
-                    <div class="skll__value"style="width: 0;"></div>
-                </div>
-                </div>   
-                 </div>
-                 <div class="skillset__right"></div>
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>  
-                       <ul class="tool__list">
-                           <li>Visual studio code</li>
-                           <li>Android studio</li>
-                           <li>atom</li>
-                       </ul>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS3</span>
+                            <span>25%</span>
                     </div>
-                    <div class="Etc">
-                        <h3 class="skillset__title">Etc</h3>
-                       <ul class="etc__list">
-                           <li><span>Git</span></li>
-                           <li><span>scrum?</span></li>
-                       </ul>
+                        <div class="skill__bar">
+                        <div class="skill__value" style="width: 25%;"></div>
                     </div>
-                 </div>
+                    </div>  
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>5%</span>
+                         </div>
+                         <div class="skill__bar">
+                            <div class="skill__value" style="width: 5%;"></div>
+                        </div>
+                        </div>  
+                    <div class="skill">
+                    <div class="skill__description">
+                        <span>React</span>
+                        <span>0%</span>
+                    </div>
+                        <div class="skill__bar">
+                        <div class="skill__value" style="width: 0%;"></div>
+                    </div>
+                    </div>   
+                     </div>
+                     <div class="skillset__right">
+                        <div class="tools">
+                            <h3 class="skillset__title">Tools</h3>  
+                           <ul class="tool__list">
+                               <li>Visual studio code</li>
+                               <li>Android studio</li>
+                               <li>atom</li>
+                           </ul>
+                        </div>
+                        <div class="Etc">
+                            <h3 class="skillset__title">Etc</h3>
+                           <ul class="etc__list">
+                               <li><span>Git</span></li>
+                               <li><span>scrum?</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                     </div>
+        </div>
     </section>
     <!-- work -->
     <section id="work"class="section">
-        <h1>My work</h1>
+        <div class="section__container">
+            <h1>My work</h1>
         <h3>projects</h3>
        <div class="work__categories">
-           <button class="category__btn">
+           <button class="category__btn active">
                All 
                <span class="category__count">8</span>
             </button>
@@ -198,8 +207,8 @@
              class="project" 
             target="_blank"
             >
-                <img src="img/projects/project1.png" alt="youtube">
-                <div class="project__description">
+                <img src="img/projects/project1.png" alt="youtube" class="project__img">
+                <div class="project__description" >
                     <h3>Youtube site</h3>
                     <span>Clone coding with HTML and CSS</span>
                 </div>
@@ -209,18 +218,18 @@
             class="project" 
             target="_blank"
             >
-                <img src="img/projects/project2.png" alt="navarbar-menu">
+                <img src="img/projects/project2.png" alt="navarbar-menu" class="project__img">
                 <div class="project__description">
-                    <h3>Navarbar-menu</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript and jquery</span>
+                    <h3>navbar-menu</h3>
+                    <span>responsive web-site with HTML,CSS Javascript and jquery</span>
                 </div>
             </a>
             <a 
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
-            >
-                <img src="img/projects/project3.png" alt="web-site">
+            >   
+                <img src="img/projects/project3.png" alt="web-site"class="project__img">
                 <div class="project__description">
                     <h3>app</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
@@ -231,7 +240,7 @@
             class="project"
             target="_blank"
             >
-                <img src="img/projects/project4.png" alt="#">
+                <img src="img/projects/project4.png" alt="#"class="project__img">
                 <div class="project__description">
                     <h3>#</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
@@ -242,7 +251,7 @@
             class="project"
             target="_blank"
             >
-                <img src="img/projects/project5.png" alt="#">
+                <img src="img/projects/project5.png" alt="#"class="project__img">
                 <div class="project__description">
                     <h3>#</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
@@ -253,7 +262,7 @@
             class="project"
             target="_blank"
             >
-                <img src="img/projects/project6.png" alt="#">
+                <img src="img/projects/project6.png" alt="#"class="project__img">
                 <div class="project__description">
                     <h3>#</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
@@ -264,7 +273,7 @@
             class="project"
             target="_blank"
             >
-                <img src="img/projects/project7.png" alt="#">
+                <img src="img/projects/project7.png" alt="#"class="project__img">
                 <div class="project__description">
                     <h3>#</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
@@ -275,43 +284,48 @@
             class="project"
             target="_blank"
             >
-                <img src="img/projects/project8.png" alt="#">
+                <img src="img/projects/project8.png" alt="#"class="project__img">
                 <div class="project__description">
                     <h3>#</h3>
                     <span>responsive web-site with HTML and CSS and Javascript</span>
                 </div>
             </a>
         </div>
+        </div>
+        
     </section>
     <!--testimonials  -->
     <section id="testimonials"class="section">
-        <h1>Testimonials</h1>
-        <h3>see what they say about me</h3>
-        <div class="testimonials__people">
-            <div class="testimonials__img">
-                <img src="testimonials/testimonials.jpg"
-                 alt="people"
-                 class="testimonials_avatar"
-                 >
-            </div>
-            <div class="testimonials__desc">
-                <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
-                <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
-                <p><a href="https://github.com/dding-woo">ddingwoo</a>/동서울전문대학교</p>
-            </div>
-
-            <div class="testimonials__img">
+        <div class="section__container"> <h1>Testimonials</h1>
+            <h3>see what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="testimonials/testimonials.jpg"
+                    alt="people"
+                    class="testimonials_avatar"
+                    >
+                <div class="testimonials__desc">
+                    <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
+                    <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
+                    <p><a href="https://github.com/dding-woo" target="_blank">ddingwoo</a>/동서울전문대학교</p>
+                </div>
+               
+              </div>
+              <div class="testimonial">
+                <div class="testimonials__desc">
+                    <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
+                    <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
+                        <p><a href="https://github.com/dding-woo"target="_blank">ddingwoo</a>/동서울전문대학교</p>
+                </div>
                 <img src="testimonials/testimonials.jpg" 
                 alt="people"
                 class="testimonials_avatar"
                 >
-            </div>
-            <div class="testimonials__desc">
-                <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
-                <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
-                    <p><a href="https://github.com/dding-woo">ddingwoo</a>/동서울전문대학교</p>
+                </div>
             </div>
         </div>
+           
+       
         
     </section>
     <!-- contact -->

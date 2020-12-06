@@ -5,9 +5,10 @@
   --color-light-white: #eeeeeef5;
   --color--dark-white: #bdbdbd;
   --color-light-gery: #d3d3d3;
+  --color-llght-gery: #6e6968;
   --color-dark-gery: #4d4d4d;
   --color-grey-: #616161;
-  --color--pink:
+  --color--pink: #fe918d;
   --color--dark-pink: #ff6863;
   --color-blue-green: #9fe1e1;
   --color-dark-blue-green: #81c2c2;
@@ -34,7 +35,7 @@
   --border-radius: 0.25rem;
 
   /*Animation*/
-  --animation-duration:300ms;
+  --animation-duration: 300ms; /*300ms:사람이 가장 흥미를 가지면서 지루하지 않은 초*/
 }
 /*Universal tag*/
 * {
@@ -105,7 +106,7 @@ p {
   padding: 1rem;
 }
 
-.navbar__mneu {
+.navbar__menu {
   display: flex;
 }
 
@@ -127,9 +128,21 @@ p {
   background-color: var(--color-dark-blue-green);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 1.4rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  display: none;
+}
+
 /*HOME*/
 #home {
-  background: url("/img/home-background.png") center/cover no-repeat;
+  background: url("img/home-background.png") center/cover no-repeat;
+  /*background:url('../img/home-background.png')*/
+  /* background: url("img/home-background.png") center/cover no-repeat;*/
+  /* background: url("img./home-background.png") center/cover no-repeat;*/
   padding: 2.5rem;
   text-align: center; /*block요소 에만 적용 가능*/
 }
@@ -157,6 +170,9 @@ p {
 .section {
   padding: 2.5rem;
   text-align: center;
+  margin: auto;
+}
+.section__container {
   max-width: 75rem;
   margin: auto;
 }
@@ -190,24 +206,222 @@ p {
   font-size: var(--font-small);
 }
 .major__icon:hover i {
-  color: pink ;
+  color: var(--color--pink);
   transform: rotate(-30deg) scale(1.1);
 }
-.major__icon i{
-  transition: all var(--animation-duration) ease; 
-}   
+.major__icon i {
+  transition: all var(--animation-duration) ease-in;
+}
 
-.about__academic{
+.about__academic {
   display: flex;
   align-items: center;
 }
-.academic__name{
+.academic__name {
   margin-bottom: 1rem;
 }
-.academic p{
+.academic p {
   color: var(--color-light-gery);
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
 }
+/*skill*/
+#skill {
+  background-color: var(--color-yellow);
+}
+.skillset {
+  display: flex;
+  background-color: var(--color-llght-gery);
+  color: var(--color-light-white);
+}
+.skill {
+  margin-bottom: 2rem;
+}
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-gery);
+  padding: 1.5rem 2.5rem;
+}
+.skillset__right {
+  flex-basis: 40%;
+}
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey-);
+}
+.skill__value {
+  height: 0.1875rem;
+  background-color: var(--color-orange);
+}
 
+.tools {
+  background-color: var(--color-grey-);
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+/*work*/
+.work__categories {
+  margin: 2.5rem;
+}
+.category__btn {
+  border: solid 0.0625rem var(--color--dark-white);
+  border-radius: var(--border-radius);
+  font-size: var(--font-regular);
+  padding: 0.5rem 3rem;
+}
+.category__btn.active,
+.category__btn:hover {
+  background-color: var(--color--pink);
+  color: var(--color-white);
+}
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
 
+.category__count {
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  line-height: 1.5rem;
+  position: relative;
+  top: -1.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in; /*transition과 transform의 차이?? */
+}
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15.63rem;
+  height: 17.5rem;
+  margin: 0.125rem;
+  position: relative;
+  background-color: var(--color-light-white);
+}
+.project .project__img:hover {
+  opacity: 0.8;
+}
+.project h3,
+span {
+  color: var(--color-white);
+}
+.project__img {
+  max-width: 100%;
+  height: 100%;
+}
+.project__description {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column; /*flexble 하게 되는 방향이 열 */
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
+}
+.project:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+.project__description h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -0.75rem;
+  margin-top: 0.5rem;
+  width: 1.51rem;
+  height: 0.125rem;
+  background-color: var(--color--dark-white);
+}
+
+/*Testimonial*/
+#testimonials {
+  background: var(--color-light-white);
+}
+.testimonials {
+  margin: 2.5rem;
+  padding: 0 4.8rem;
+}
+.testimonial {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.testimonials_avatar {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+}
+.testimonials_avatar:nth-child(odd) {
+  margin-right: 2.5rem;
+}
+.testimonials_avatar:nth-child(even) {
+  margin-left: 2.5rem;
+}
+.testimonials__desc {
+  padding: 1.125rem;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+}
+.testimonials__desc a {
+  color: var(--color--pink);
+}
+/*contact*/
+#contact {
+  background-color: var(--color-dark-blue-green);
+}
+.contact__title,
+.contact__email,
+.contact__right {
+  color: var(--color-white);
+}
+.contact__title {
+  margin: 2rem 0;
+}
+.contact__links {
+  font-size: var(--font-large);
+  margin: 1.5rem 0;
+}
+.contact__links i {
+  transition: var(--animation-duration) ease-in;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-BlanchedAlmond);
+}
+/*For below 768px screen width*/
+/*미디어 쿼리 안에는 스타일링을 최소화 하는편이 좋음. 차이점만 작성할것,*/
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
