@@ -22,9 +22,23 @@ navbarMenu.addEventListener('click',(event)=>{
     const link = target.dataset.link;   
     if(link==null){
         return;
-    }
-    console.log(event.target.dataset.link);
-
-    const scrollTo=document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    } 
+    scrollIntoView(link);
 }); 
+
+//handle scrolling  when contact me button 
+
+const homecontacButton = document.querySelector('.home__contact');
+homecontacButton.addEventListener('click',(event)=>{
+    
+    const target = event.target;
+    const link = target.dataset.link;   
+
+    scrollIntoView('#contact');
+
+    
+}); 
+function scrollIntoView(selector){
+    const scrollTo=document.querySelector(selector);
+   scrollTo.scrollIntoView({behavior: "smooth"});
+   }
