@@ -39,23 +39,27 @@
 
     <!-- Home -->
     <section id="home">
-        <img 
-        class="home__profile" 
-        src="img/profile.png" 
-        alt="profile-img"
-        >
-        <h1 class="home__title">
-            Hello,<br>
-            I' Dream Coder
-        </h1>
-        <h2 class="home__description">FT Developers everywhere, always needed 😎</h2>
-       
-        <button class="home__contact"data-link="#contact">
+        <div class="home__container">
+            <img 
+            class="home__profile" 
+            src="img/profile.png" 
+            alt="profile-img"
+            >
+            <h1 class="home__title">
+                Hello,<br>
+                I' Dream Coder
+            </h1>
+            <h2 class="home__description">FT Developers everywhere, always needed 😎</h2>
+           
+        </div>
+        <button class="home__contact" data-link="#contact">
             CONTACT ME
         </button>
+       
     </section>
     <!-- about -->  
     <section id="about" class="section section__container">
+       
             <h1 class="about__title">About me</h1>
             <p class="about__desc">about me</p>
             <div class="about__majors">
@@ -184,19 +188,19 @@
             <h1>My work</h1>
         <h3>projects</h3>
        <div class="work__categories">
-           <button class="category__btn active">
+           <button class="category__btn active" data-filter="*">
                All 
                <span class="category__count">8</span>
             </button>
-           <button class="category__btn">
+           <button class="category__btn" data-filter="html-css">
                HTML/CSS 
                <span class="category__count">3</span>
             </button>
-           <button class="category__btn">
+           <button class="category__btn" data-filter="js">
                JavaScript 
                <span class="category__count">3</span>
             </button>
-           <button class="category__btn">
+           <button class="category__btn" data-filter="react">
                React 
                <span class="category__count">2</span>
             </button>
@@ -206,6 +210,7 @@
             href="https://github.com/dding-woo?tab=repositories"
              class="project" 
             target="_blank"
+            data-type="html-css"
             >
                 <img src="img/projects/project1.png" alt="youtube" class="project__img">
                 <div class="project__description" >
@@ -217,6 +222,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project" 
             target="_blank"
+            data-type="html-css"
             >
                 <img src="img/projects/project2.png" alt="navarbar-menu" class="project__img">
                 <div class="project__description">
@@ -228,6 +234,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="js"
             >   
                 <img src="img/projects/project3.png" alt="web-site"class="project__img">
                 <div class="project__description">
@@ -239,6 +246,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="js"
             >
                 <img src="img/projects/project4.png" alt="#"class="project__img">
                 <div class="project__description">
@@ -250,6 +258,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="js"
             >
                 <img src="img/projects/project5.png" alt="#"class="project__img">
                 <div class="project__description">
@@ -261,6 +270,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="react"
             >
                 <img src="img/projects/project6.png" alt="#"class="project__img">
                 <div class="project__description">
@@ -272,6 +282,7 @@
             href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="react"
             >
                 <img src="img/projects/project7.png" alt="#"class="project__img">
                 <div class="project__description">
@@ -283,6 +294,7 @@
              href="https://github.com/dding-woo?tab=repositories"
             class="project"
             target="_blank"
+            data-type="react"
             >
                 <img src="img/projects/project8.png" alt="#"class="project__img">
                 <div class="project__description">
@@ -344,6 +356,10 @@
         <div>
             <p class="contact__right">2021 My portfolio web page</p>
         </div>
-    </section>    
+    </section>
+    <button class="arrowup__btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
 </body>
 </html>

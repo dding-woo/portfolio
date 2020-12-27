@@ -202,6 +202,7 @@ p {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .major__title {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -320,6 +321,9 @@ p {
   position: relative;
   background-color: var(--color-light-white);
 }
+.project.invisible {
+  display: none;
+}
 .project .project__img:hover {
   opacity: 0.8;
 }
@@ -415,6 +419,19 @@ span {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-BlanchedAlmond);
+}
+.arrowup__btn {
+  font-size: 3rem;
+  color: var(--color-white);
+  background-color: var(--color--pink);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in;
 }
 /*For below 768px screen width*/
 /*미디어 쿼리 안에는 스타일링을 최소화 하는편이 좋음. 차이점만 작성할것,*/
