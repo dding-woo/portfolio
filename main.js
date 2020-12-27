@@ -83,21 +83,25 @@ workBtnContaniner.addEventListener('click',(event)=>{
     if(filter==null){
         return;
     }
-    console.log(filter);
-    projects.forEach((project)=>{
-        console.log(project.dataset.type);  
+    projectContaniner.classList.add('ani--out');
+    setTimeout(()=>{
+        projects.forEach((project)=>{
+            console.log(project.dataset.type);  
+    
+         if(filter==='*' || filter===project.dataset.type) {
+            project.classList.remove('invisible');   //All이거나 데이터 타입과 필터가 일치하는 것은 보여줘야하니까 안보여지는 클래스는 제거하고
+         }else{
+            project.classList.add('invisible');// 데이터 타입과 필터가 일치 하지 않는 것들은 안보여야 하니까 얀보이게 하는 클래스를 추가.
+         } 
+        });
+    
+        projectContaniner.classList.remove('ani--out');
 
-     if(filter==='*' || filter===project.dataset.type) {
-        project.classList.remove('invisible');   //All이거나 데이터 타입과 필터가 일치하는 것은 보여줘야하니까 안보여지는 클래스는 제거하고
-     }else{
-        project.classList.add('invisible');// 데이터 타입과 필터가 일치 하지 않는 것들은 안보여야 하니까 얀보이게 하는 클래스를 추가.
-     } 
-    });
-
-
-
+    },300);
 
 });
+
+
 
 
 

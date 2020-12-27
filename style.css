@@ -310,6 +310,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all var(--animation-duration) ease-out;
+  opacity: 1;
+}
+.work__projects.ani--out {
+  opacity: 0;
+  transform: scale(0.96) translateY(2.5rem);
 }
 .project {
   display: flex;
