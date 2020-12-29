@@ -17,14 +17,20 @@ document.addEventListener('scroll',() =>{
 
 //handle scrolling when tapping on the navbar menu
 const navbarMenu= document.querySelector('.navbar__menu');
+const navbarMenItem = document.querySelectorAll('.navbar__menu__item');
+
 navbarMenu.addEventListener('click',(event)=>{
     const target = event.target;
     const link = target.dataset.link;   
+   
+    
     if(link==null){
         return;
-    } 
+    }
+  
     scrollIntoView(link);
 }); 
+
 
 //handle scrolling  when contact me button 
 
@@ -71,7 +77,7 @@ arrowUpbtn.addEventListener('click',()=>{
     scrollIntoView('#home');
 });
 
-//project data-filter , data-type
+//categories btn
 
 const workBtnContaniner = document.querySelector('.work__categories');
 const projectContaniner = document.querySelector('.work__projects'); 
@@ -83,6 +89,12 @@ workBtnContaniner.addEventListener('click',(event)=>{
     if(filter==null){
         return;
     }
+  //Remove  selection from the previous item and select the new one.
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = event.target.nodeName ==='BUTTON' ?   event.target : event.target.parentNode;
+    target.classList.add('selected');
+
     projectContaniner.classList.add('ani--out');
     setTimeout(()=>{
         projects.forEach((project)=>{
@@ -98,7 +110,7 @@ workBtnContaniner.addEventListener('click',(event)=>{
         projectContaniner.classList.remove('ani--out');
 
     },300);
-
+  
 });
 
 
