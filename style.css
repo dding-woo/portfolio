@@ -63,14 +63,11 @@
       border: none;
       outline: none;
     }
-
+    
     /*Typography*/
-    h1 {
-      font-size: var(--font-large);
-      font-weight: var(--weight-bold);
-      color: var(--color-black);
-      margin: 1rem 0;
-    }
+   
+      
+    
     h2 {
       font-size: var(--font-medium);
       font-weight: var(--weight-semi-bold);
@@ -82,11 +79,18 @@
       font-weight: var(--weight-regular-bold);
       margin: 0.5rem 0;
     }
-    p {
-      font-size: var(--font-regular);
+    
+    /* title */
+    .title{
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    /* description */
+    .discription{
+      font-size: 1.125rem;
       font-weight: var(--weight-regular-bold);
       color: var(--color-black);
-      margin: 0.25rem 0;
+      margin: 0.5rem 0;
     }
 
     .icon {
@@ -150,9 +154,6 @@
     #home {
       background: url("img/home-background.png") center/cover no-repeat;
       background-attachment: fixed;
-      /*background:url('../img/home-background.png')*/
-      /* background: url("img/home-background.png") center/cover no-repeat;*/
-      /* background: url("img./home-background.png") center/cover no-repeat;*/
       padding: 2.5rem;
       padding-top: 7.5rem;
       text-align: center; /*block요소 에만 적용 가능*/
@@ -163,9 +164,23 @@
       border-radius: 30%; /*border-radius: 50%;는 동그라미*/
       border: solid 0.125rem var(--color-white); /*초록색 배경은 회색이랑 조합이 안맞는듯..?*/
     }
+    .home__title{
+      font-size: var(--font-large);
+      font-weight: var(--weight-bold);
+      color: var(--color-black);
+      margin: 1rem 0;
+    }
+    .home__description{
+      font-size: var(--font-regular);
+      font-weight: var(--weight-regular-bold);
+      color: var(--color-black);
+      margin: 0.25rem 0;
+    }
+    
     .home__title,
     .home__description {
       color: var(--color-white);
+  
     }
 
     .home__contact {
@@ -204,8 +219,14 @@
       border: 1px solid var(--color-blue);
       border-radius: 50%;
       margin-bottom: 1rem;
+      transition:all var(--animation-duration) ease-out;
     }
-
+    .major__icon:hover{
+      transform: scale(1.2);
+      transition:all var(--animation-duration) ease-out;
+      
+    }
+    
     .major__title {
       font-size: var(--font-medium);
       font-weight: var(--weight-semi-bold);
@@ -227,6 +248,7 @@
 
     .about__academic {
       display: flex;
+      justify-content: center;
       align-items: center;
     }
     .academic__name {
@@ -296,7 +318,7 @@
 
 
     .slide__wrap{
-      width: 75rem;
+      max-width: 75rem;
       margin: 0 auto;
       overflow: hidden;
       position: relative;
@@ -310,7 +332,7 @@
     .slide__wrap .project__slider .project{
       width: 3660px;
       margin-right: 30px;
-
+      position: relative;
     }
     .slide__wrap .project__slider .project:last-child{
       margin-right: 0;
@@ -341,7 +363,22 @@
     .next{
       right: 10%;
     }
-    
+    .portpolio__btn{
+
+      display: inline-block;
+      width: 70px;
+      height: 40px;
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      color: var(--color-black);
+      border: 1px solid #666;
+      border-radius: 10%;
+      line-height: 40px;
+    }
+    .portpolio__btn:hover{
+      background-color: #fffdc3;
+    }
     
     /*contact*/
     #contact {
@@ -359,7 +396,11 @@
       font-size: var(--font-medium);
     }
     .contact__title {
+      font-size: var(--font-large);
       margin: 2rem 0;
+    }
+    .contact__email{
+      font-size: var(--font-medium);
     }
     .contact__links {
       font-size: var(--font-large);
@@ -443,10 +484,50 @@
       .major {
         margin-bottom: 2.5rem;
       }
-
-      .category__btn {
+      .slide__wrap{
         width: 100%;
-        margin: 0.5rem 0;
+        margin: 0 auto;
+        
+      }
+      .slide__wrap .project__slider{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .slide__wrap .project__slider .project{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      
+      .slide__wrap .project__slider .project img{
+        display: inline-block;
+        width: 100%;
+        
+      }
+      .prev,
+      .next{
+        display: none;
+      }
+      .prev{
+        left: 10%;
+      }
+      .next{
+        right: 10%;
+      }
+      .portpolio__btn{
+
+        display: inline-block;
+        width: 60px;
+        height: 40px;
+        position: absolute;
+        bottom: 80px;
+        right: 20px;
+        color: var(--color-black);
+        border: 1px solid #666;
+        border-radius: 10%;
+        line-height: 40px;
+    
       }
       .about__majors {
         margin-top: 0;
@@ -458,35 +539,8 @@
       .skillset {
         flex-direction: column;
       }
-      .project {
-        flex-grow: 1;
-      }
-      .testimonials_avatar {
-        width: 5rem;
-        height: 5rem;
-      }
-
-      .testimonials {
-        padding: 0;
-      }
-      .testimonial {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-      }
-      .testimonials_avatar {
-        width: 7.5rem;
-        height: 7.5rem;
-      }
-      .testimonials__desc {
-        order: 1;
-      }
-      .testimonials_avatar:nth-child(odd),
-      .testimonials_avatar:nth-child(even) {
-        margin: 0;
-        margin-bottom: 0.5rem;
-      }
+      
+      
       .arrowup__btn {
         width: 3.125rem;
         height: 3.125rem;
@@ -494,5 +548,25 @@
         line-height: 3.125rem;
         right: 1rem;
         bottom: 1rem;
+      }
+
+    }
+    @media screen and (max-width:360px) {
+      .project p{
+        font-size: 0.8rem;
+        
+      }
+      .portpolio__btn{
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        color: var(--color-black);
+        border: 1px solid #666;
+        border-radius: 10%;
+        line-height: 20px;
+    
       }
     }
