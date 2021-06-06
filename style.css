@@ -64,29 +64,18 @@
       outline: none;
     }
     
-    /*Typography*/
-   
+  
       
     
-    h2 {
-      font-size: var(--font-medium);
-      font-weight: var(--weight-semi-bold);
-      color: var(--color-black);
-      margin: 0.5rem 0;
-    }
-    h3 {
-      font-size: var(--font-regular);
-      font-weight: var(--weight-regular-bold);
-      margin: 0.5rem 0;
-    }
+    
     
     /* title */
     .title{
       font-size: 3rem;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
     }
     /* description */
-    .discription{
+    .description{
       font-size: 1.125rem;
       font-weight: var(--weight-regular-bold);
       color: var(--color-black);
@@ -271,6 +260,11 @@
     .skill {
       margin-bottom: 2rem;
     }
+    .skillset__title{
+      font-size: var(--font-regular);
+      font-weight: var(--weight-semi-bold);
+      margin: 0.5rem 0;
+    }
     .skillset__left {
       flex-basis: 60%;
       background-color: var(--color-dark-gery);
@@ -278,6 +272,9 @@
     }
     .skillset__right {
       flex-basis: 40%;
+    }
+    .skillset__right .etc{
+      padding-top: 1.2rem;
     }
     .skill__bar {
       width: 100%;
@@ -527,7 +524,7 @@
         border: 1px solid #666;
         border-radius: 10%;
         line-height: 40px;
-    
+        
       }
       .about__majors {
         margin-top: 0;
