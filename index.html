@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,349 +10,220 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/200d11d5ef.js" 
-            crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/200d11d5ef.js" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="style.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- navar -->
-     <nav id="navbar">
+    <nav id="navbar">
         <div class="navbar__logo">
             <img class="icon" src="img/favicon.png" alt="brand icon">
             <a href="#">ddingwoo</a>
         </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item" data-link="#home">Home</li>
-                <li class="navbar__menu__item" data-link="#about">About</li>   
-                <li class="navbar__menu__item" data-link="#skill">Skill</li>
-                <li class="navbar__menu__item" data-link="#work">Work</li>
-                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
-                <li class="navbar__menu__item" data-link="#contact">Contact</li>
-            </ul>   
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skill">Skill</li>
+            <li class="navbar__menu__item" data-link="#work">Work</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
 
-            <!--toogle button-->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i> 
-      </button>
+        <!--toogle button-->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <!-- Home -->
     <section id="home">
         <div class="home__container">
-            <img 
-            class="home__profile" 
-            src="img/profile.png" 
-            alt="profile-img"
-            >
+            <img class="home__profile" src="img/profile.png" alt="profile-img">
             <h1 class="home__title">
-                Hello,<br>
-                I' Dream Coder
+                "웹 퍼블리셔" 는 고객으로부터 요구사항과 <br>
+                디자이너로부터 받은 시안을 구현 할 의무가 있습니다.
             </h1>
-            <h2 class="home__description">FT Developers everywhere, always needed 😎</h2>
-           
+            <p class="home__description">저의 가능성을 보여드리고 꼭 함께하고싶습니다. 😎</p>
+
         </div>
         <button class="home__contact" data-link="#contact">
             CONTACT ME
         </button>
-       
+
     </section>
-    <!-- about -->  
+    <!-- about -->
     <section id="about" class="section section__container">
-       
-            <h1 class="about__title">About me</h1>
-            <p class="about__desc">about me</p>
-            <div class="about__majors">
-                <div class="major">
-                    <ul>
-                        <li class="major__icon">
-                            <i class="fab fa-html5"></i>
-                        </li>   
-                        <li class="major__title">
-                            Hard Skill
-                        </li>
-                        <li class="major__description">
-                          HTML / CSS3
+        <h2 class="title">About me</h2>
+        <p class="description">about me</p>
+        <div class="about__majors">
+            <div class="major">
+                <ul>
+                    <li class="major__icon">
+                        <i class="fab fa-html5"></i>
                     </li>
-                   </ul>
-               </div>
-               <div class="major">
-                   <ul>
-                       <li class="major__icon">
-                           <i class="fab fa-js"></i>
-                        </li>
-                       <li class="major__title">
+                    <li class="major__title">
+                        Hard Skill
+                    </li>
+                    <li class="major__description">
+                        HTML / CSS3
+                    </li>
+                </ul>
+            </div>
+            <div class="major">
+                <ul>
+                    <li class="major__icon">
+                        <i class="fab fa-js"></i>
+                    </li>
+                    <li class="major__title">
                         Soft Skill
-                       </li>
-                       <li class="major__description">
+                    </li>
+                    <li class="major__description">
                         JavaScript
-                       </li>
-                   </ul>
-               </div>
-               <div class="major">
-                   <ul>
-                       <li class="major__icon">
+                    </li>
+                </ul>
+            </div>
+            <div class="major">
+                <ul>
+                    <li class="major__icon">
                         <i class="fab fa-react"></i>
-                       </li>
-                       <li class="major__title">
-                        Progressing
-                       </li>
-                       <li class="major__description">
+                    </li>
+                    <li class="major__title">
+                        Expected
+                    </li>
+                    <li class="major__description">
                         React
-                       </li>
-                   </ul>
-               </div>
+                    </li>
+                </ul>
             </div>
-            <div class="about__academic">
-                <div class="academic">
-                    <img src="img/projects/jobs/academic-logo.png" alt="academic-logo">
-                    <p class="academic__name">동서울전문대학교 Dong Seoul College</p>
-                    <p class="academic__period">컴퓨터정보과(스마트정보):  2017년도입학 2021년도 졸업</p>
-                </div>
+        </div>
+        <div class="about__academic">
+            <div class="academic">
+                <img src="./img/academic-logo.png" alt="academic-logo">
+                <p class="academic__name">동서울전문대학교 Dong Seoul College</p>
+                <p class="academic__period">컴퓨터정보과(스마트정보): 2017년도입학 2022년도 2월 졸업예정</p>
             </div>
+        </div>
     </section>
-  <!-- skill -->
-    <section  section id="skill"class="section">
+    <!-- skill -->
+    <section id="skill" class="section">
         <div class="section__container">
             <div class=skills>
-                <h1>skills</h1>
-                <h2 class="description">skills&Attributes</h2>
-                <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Caable of <br>
-                    working width a team environment and independenty. Ability to plan and time shedule, work under <br>
-                    strict time pressure and adapt quickly when needed.
+                <h2 class="title">Skills</h2>
+                <p class="description">Skills & Attributes</p>
+                <p>
+                    주로 사용하는 에디터는 visual studio code이고, 안드로이드 스튜디오와 아톰 에디터를 이용해본적 있습니다 <br>
+                    토이 프로젝트나 새롭게 배운 내용은 깃허브와 노션을 통해 관리하려고 노력합니다.
                 </p>
             </div>
             <div class="skillset">
                 <div class="skillset__left">
                     <h3 class="skillset__title">Skills</h3>
                     <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>25%</span>
-                     </div>
-                     <div class="skill__bar">
-                        <div class="skill__value" style="width:25%;"></div>
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    </div>  
                     <div class="skill">
                         <div class="skill__description">
                             <span>CSS3</span>
                             <span>25%</span>
-                    </div>
+                        </div>
                         <div class="skill__bar">
-                        <div class="skill__value" style="width: 25%;"></div>
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    </div>  
-                    <div class="skill">
+                    <div class=" skill">
                         <div class="skill__description">
                             <span>JavaScript</span>
                             <span>5%</span>
-                         </div>
-                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 5%;"></div>
                         </div>
-                        </div>  
-                    <div class="skill">
-                    <div class="skill__description">
-                        <span>React</span>
-                        <span>0%</span>
-                    </div>
                         <div class="skill__bar">
-                        <div class="skill__value" style="width: 0%;"></div>
-                    </div>
-                    </div>   
-                     </div>
-                     <div class="skillset__right">
-                        <div class="tools">
-                            <h3 class="skillset__title">Tools</h3>  
-                           <ul class="tool__list">
-                               <li>Visual studio code</li>
-                               <li>Android studio</li>
-                               <li>atom</li>
-                           </ul>
-                        </div>
-                        <div class="Etc">
-                            <h3 class="skillset__title">Etc</h3>
-                           <ul class="etc__list">
-                               <li><span>Git</span></li>
-                               <li><span>scrum?</span></li>
-                           </ul>
+                            <div class="skill__value"></div>
                         </div>
                     </div>
-                     </div>
-        </div>
-    </section>
-    <!-- work -->
-    <section id="work"class="section">
-        <div class="section__container">
-            <h1>My work</h1>
-        <h3>projects</h3>
-       <div class="work__categories">
-           <button class="category__btn selected" data-filter="*">
-               All 
-               <span class="category__count">8</span>
-            </button>
-           <button class="category__btn" data-filter="html-css">
-               HTML/CSS 
-               <span class="category__count">3</span>
-            </button>
-           <button class="category__btn" data-filter="js">
-               JavaScript 
-               <span class="category__count">3</span>
-            </button>
-           <button class="category__btn" data-filter="react">
-               React 
-               <span class="category__count">2</span>
-            </button>
-       </div>   
-        <div class="work__projects">
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-             class="project" 
-            target="_blank"
-            data-type="html-css"
-            >
-                <img src="img/projects/project1.png" alt="youtube" class="project__img">
-                <div class="project__description" >
-                    <h3>Youtube site</h3>
-                    <span>Clone coding with HTML and CSS</span>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 0%;"></div>
+                        </div>
+                    </div>
                 </div>
-            </a >
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project" 
-            target="_blank"
-            data-type="html-css"
-            >
-                <img src="img/projects/project2.png" alt="navarbar-menu" class="project__img">
-                <div class="project__description">
-                    <h3>navbar-menu</h3>
-                    <span>responsive web-site with HTML,CSS Javascript and jquery</span>
-                </div>
-            </a>
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="js"
-            >   
-                <img src="img/projects/project3.png" alt="web-site"class="project__img">
-                <div class="project__description">
-                    <h3>app</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="js"
-            >
-                <img src="img/projects/project4.png" alt="#"class="project__img">
-                <div class="project__description">
-                    <h3>#</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="js"
-            >
-                <img src="img/projects/project5.png" alt="#"class="project__img">
-                <div class="project__description">
-                    <h3>#</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="react"
-            >
-                <img src="img/projects/project6.png" alt="#"class="project__img">
-                <div class="project__description">
-                    <h3>#</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-            <a 
-            href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="react"
-            >
-                <img src="img/projects/project7.png" alt="#"class="project__img">
-                <div class="project__description">
-                    <h3>#</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-            <a
-             href="https://github.com/dding-woo?tab=repositories"
-            class="project"
-            target="_blank"
-            data-type="react"
-            >
-                <img src="img/projects/project8.png" alt="#"class="project__img">
-                <div class="project__description">
-                    <h3>#</h3>
-                    <span>responsive web-site with HTML and CSS and Javascript</span>
-                </div>
-            </a>
-        </div>
-        </div>
-        
-    </section>
-    <!--testimonials  -->
-    <section id="testimonials"class="section">
-        <div class="section__container"> <h1>Testimonials</h1>
-            <h3>see what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="testimonials/testimonials.jpg"
-                    alt="people"
-                    class="testimonials_avatar"
-                    >
-                <div class="testimonials__desc">
-                    <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
-                    <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
-                    <p><a href="https://github.com/dding-woo" target="_blank">ddingwoo</a>/동서울전문대학교</p>
-                </div>
-               
-              </div>
-              <div class="testimonial">
-                <div class="testimonials__desc">
-                    <p>Mr. seungwoo, as I had experienced, has strong sense of responsibility, getting jobs,
-                    <br> whatever required, done through teamwork with his colleagues, which is his strong point.</p>
-                        <p><a href="https://github.com/dding-woo"target="_blank">ddingwoo</a>/동서울전문대학교</p>
-                </div>
-                <img src="testimonials/testimonials.jpg" 
-                alt="people"
-                class="testimonials_avatar"
-                >
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tool__list">
+                            <li>Visual studio code</li>
+                            <li>Android studio</li>
+                            <li>atom</li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Github</span></li>
+                            <li><span>Notion</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-           
-       
-        
+    </section>
+    <!-- work -->
+    <section id="work" class="section">
+        <div class="slide__wrap">
+            <h2 class="title">My work</h2>
+            <p class="description">Projects</p>
+            <div class="project__slider">
+                <div class="project">
+                    <img src="./img/project__img1.png" alt="프로젝트">
+                    <h4>해외 모던 웹 사이트 클론코딩 #1</h4>
+                    <p>반복숙달적으로 클론코딩을 통해 html과 css를 좀더 구조적, 효율적 작성하는 법을 배웠습니다.</p>
+                    <a href="https://dding-woo.github.io/WAXSOM/" class="portpolio__btn" target="_blank">More</a>
+                </div>
+                <div class="project">
+                    <img src="./img/project__img2.png" alt="프로젝트">
+                    <h4>해외 모던 웹 사이트 클론코딩 #2</h4>
+                    <p>transition이라던지 animation속성을 공부 해 볼 수 있었고, 트렌드에 맞게 동적인 움직임을 주는 연습을 해야겠다고 느꼈습니다.</p>
+                    <a href="https://dding-woo.github.io/Zorka-agency_clone/" class="portpolio__btn"
+                        target="_blank">More</a>
+                </div>
+
+                <div class="project">
+                    <img src="./img/project__img3.png" alt="프로젝트">
+                    <h4>인천공항 웹 사이트 클론코딩 #3</h4>
+                    <p>원페이지로 된 구조 말고도 시멘틱 태그로 레이아웃을 잡는 것과 position을 많이 공부 할 수 있었습니다. </p>
+                    <a href="https://dding-woo.github.io/incheonairport/" class="portpolio__btn"
+                        target="_blank">More</a>
+                </div>
+            </div>
+            <span class="prev"><i class="fas fa-arrow-left"></i></span>
+            <span class="next"><i class="fas fa-arrow-right"></i></span>
+        </div>
     </section>
     <!-- contact -->
-    <section id="contact"class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">hsw7852@naver.com</h2>
+    <section id="contact" class="section">
+        <div class="contact__title">Let's talk</div>
+        <div class="contact__email">hsw7852@naver.com</div>
+        <span class="contact__call">010-5699-7852</span>
         <div class="contact__links">
-            <a href="https://github.com/dding-woo"
-            target="_blank">
+            <a href="https://github.com/dding-woo" target="_blank" title="github">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="#" target="_blank"> 
-            <i class="fab fa-linkedin"></i>
+            <a href="https://www.notion.so/Design-Requirements-36b6072bb2ca46ccb7ebabcbb43b4431" target="_blank"
+                title="notion">
+                <i class="far fa-clipboard"></i>
             </a>
+
         </div>
         <div>
             <p class="contact__right">2021 My portfolio web page</p>
@@ -360,6 +232,7 @@
     <button class="arrowup__btn">
         <i class="fas fa-arrow-up"></i>
     </button>
-    
+
 </body>
+
 </html>
